@@ -21,12 +21,14 @@
 					$("#popup img").attr({"src" : s2 });			
 					$("#popup h2").text( a1 );
 					
-					$("#popup").delay(300).fadeIn();					
+					$("#popup").delay(300).fadeIn();
+					$("body").css("overflow","hidden");
 				});
 				
 				//큰팝업 닫기
 				$("#popup button").click(function(){
 						$("#popup").fadeOut();
+					        $("body").css("overflow","auto");
 				});
 				
 				
